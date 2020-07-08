@@ -13,3 +13,5 @@
 3. **Question:** Using the script you produced to predict housing price, take the provided six houses and train a neural net model that estimates the relationship between them. Based on this model, which of the six homes present a good deal? Which one is the worst deal? Justify your answer.
   -	By making a neural net model, we can estimate what each house should be priced based on bedroom number. Looking at the output of the code, we see that 160 Holly Point Rd, a house with three bedrooms selling for $97,000, is the best deal. Based on the model, we see that 760 New Point Comfort Hwy, a five bedroom house selling for $577,200, is the worst deal.
   - This model could have been strengthened by using square footage instead of bedroom count in the input. Thus, it would account for other spaces and bathroom count.
+  
+![image](https://user-images.githubusercontent.com/67920563/86965495-ad1ce180-c135-11ea-9d3b-ccf5a14a66e0.png)
