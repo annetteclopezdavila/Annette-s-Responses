@@ -15,3 +15,4 @@
   - This model could have been strengthened by using square footage instead of bedroom count in the input. Thus, it would account for other spaces and bathroom count.
   
 ![image](https://user-images.githubusercontent.com/67920563/86965495-ad1ce180-c135-11ea-9d3b-ccf5a14a66e0.png)
+![image](https://user-images.githubusercontent.com/67920563/86965586-cb82dd00-c135-11ea-9e2a-7826f5202968.png)
