@@ -14,5 +14,3 @@
   -	By making a neural net model, we can estimate what each house should be priced based on bedroom number. Looking at the output of the code, we see that 160 Holly Point Rd, a house with three bedrooms selling for $97,000, is the best deal. Based on the model, we see that 760 New Point Comfort Hwy, a five bedroom house selling for $577,200, is the worst deal.
   - This model could have been strengthened by using square footage instead of bedroom count in the input. Thus, it would account for other spaces and bathroom count.
   
-![image](https://user-images.githubusercontent.com/67920563/86965495-ad1ce180-c135-11ea-9d3b-ccf5a14a66e0.png)
-![image](https://user-images.githubusercontent.com/67920563/86965586-cb82dd00-c135-11ea-9e2a-7826f5202968.png)
