@@ -26,12 +26,12 @@ In the past example we used the optimizer and loss function, while in this one w
 crossentropy for the loss argument.  How do the optimizer and loss functions operate to produce model parameters (estimates) within the model.compile() function?
   -	The neural network makes a prediction based on the relationship between the data and labels. The loss function evaluates how good or bad that prediction is. The optimizer uses the results to improve that guess. It minimizes the prediction errors by manipulating weights and biases. Thus, the neural network is trained as it repeats, thus producing model parameters. 
   4. **Question 4:** Using the mnist drawings dataset (the dataset with the hand written numbers with corresponding labels) answer the following questions.
-    1.What is the shape of the images training set (how many and the dimension of 
+    1. What is the shape of the images training set (how many and the dimension of 
   each)?
       - 28x28, 60,000
     2. What is the length of the labels training set? 
       -60,000
-    3.What is the shape of the images test set? 
+    3. What is the shape of the images test set? 
       -10,000
   
 
