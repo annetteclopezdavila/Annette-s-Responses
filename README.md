@@ -28,7 +28,7 @@ crossentropy for the loss argument.  How do the optimizer and loss functions ope
   4. **Question 4:** Using the mnist drawings dataset (the dataset with the hand written numbers with corresponding labels) answer the following questions.
     1. What is the shape of the images training set (how many and the dimension of 
   each)?
-      - 28x28, 60,000
+      - 28x28, 60,000  
     2. What is the length of the labels training set? 
       -60,000
     3. What is the shape of the images test set? 
