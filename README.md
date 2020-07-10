@@ -20,11 +20,12 @@
   2. **Question 2:** The fashion MNIST example has increased the number of layers in our neural network from 1 in the past example, now to 3.  The last two are Dense layers that have activation arguments using the relu and softmax functions.  What is the purpose of each of these functions.  Also, why are there 10 neurons in the third and last layer in the neural network.
   -	 Relu function: output of a neuron is less than zero, set it to zero so it doesn’t cancel out positive outputs (so it doesn’t skew downwards)
   -	Softmax function: in the final layer, helps u find most likely candidate, sets largest value to 1 
-  -	10 neurons: the number or neurons in the last layer should match the number of classes we are classifying for. Since there are 10 types of clothing, the last layer has 10.   3. **Question 3** The last ten outputs calculate the probability that a piece of clothing is for that particular class.
+  -	10 neurons: the number or neurons in the last layer should match the number of classes we are classifying for. Since there are 10 types of clothing, the last layer has 10.
+  3. **Question 3:** The last ten outputs calculate the probability that a piece of clothing is for that particular class.
 In the past example we used the optimizer and loss function, while in this one we are using the function adam in the optimizer argument and sparse_categorical-
 crossentropy for the loss argument.  How do the optimizer and loss functions operate to produce model parameters (estimates) within the model.compile() function?
   -	The neural network makes a prediction based on the relationship between the data and labels. The loss function evaluates how good or bad that prediction is. The optimizer uses the results to improve that guess. It minimizes the prediction errors by manipulating weights and biases. Thus, the neural network is trained as it repeats, thus producing model parameters. 
-  4. **Question 4** Using the mnist drawings dataset (the dataset with the hand written numbers with corresponding labels) answer the following questions.
+  4. **Question 4:** Using the mnist drawings dataset (the dataset with the hand written numbers with corresponding labels) answer the following questions.
     1.What is the shape of the images training set (how many and the dimension of 
   each)?
       - 28x28, 60,000
