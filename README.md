@@ -33,6 +33,7 @@ crossentropy for the loss argument.  How do the optimizer and loss functions ope
 		3. What is the shape of the images test set? 10,000
 #### **PLOTS**
 ![image](https://user-images.githubusercontent.com/67920563/87109210-0ec27600-c232-11ea-96b4-f9b770866c1c.png)
+
 ![image](https://user-images.githubusercontent.com/67920563/87109200-066a3b00-c232-11ea-80f1-2a820c67641b.png)
 ![image](https://user-images.githubusercontent.com/67920563/87109225-1550ed80-c232-11ea-8552-f80089c955bb.png)
   
