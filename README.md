@@ -30,7 +30,7 @@ crossentropy for the loss argument.  How do the optimizer and loss functions ope
   each)?
       - 28x28, 60,000  
     2. What is the length of the labels training set? 
-      -60,000
+      - 60,000
     3. What is the shape of the images test set? 
       -10,000
   
