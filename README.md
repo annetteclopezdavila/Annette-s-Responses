@@ -8,4 +8,3 @@
 ## Project Index
 1. [Project 1: July 12, 2020](Project1.md)
 
-![hi](https://www.youtube.com/watch?v=a-UxJ6-qEpU&feature=youtu.be)
