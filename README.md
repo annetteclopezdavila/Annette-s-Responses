@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/67920563/86965771-0553e380-c136-11ea-841e-ca6878d8cc8e.png)
 ## Response Index
 1. [Response 1: July 7th, 2020](July-7th.md)
-2. Response 2: July 8th, 2020
+2. [Response 2: July 8th, 2020](July-8th.md)
 
 ### July 7th, 2020
 1. **Question 1:** In Laurence Maroney’s video, What is ML, he compares traditional programming with machine learning and argues that the main difference between the two is a reorientation of the rules, data and answers. According to Maroney, what is the difference between traditional programming and machine learning?
