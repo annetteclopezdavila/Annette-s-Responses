@@ -3,3 +3,4 @@
 ## Response Index
 1. [Response 1: July 7th, 2020](July-7th.md)
 2. [Response 2: July 8th, 2020](July-8th.md)
+3. [Response 3: July 9th, 2020](July-9th.md)
