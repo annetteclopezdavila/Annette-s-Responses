@@ -3,7 +3,9 @@
 
 [![Watch the video](https://user-images.githubusercontent.com/67920563/87249657-43028600-c42e-11ea-964b-f7d95e21cb7e.png)](https://youtu.be/a-UxJ6-qEpU)
 
-Please Click Video for Viewing.
+Please Click Video for Viewing. Video taken from [Live Stream](https://youtu.be/wNRgYXF-sZA)
+
+### Discussion
 
 1. Was your social distance detector effective at detecting potential violations?
   - The detector seemed to accurately gauge the distance of people near the camera. However, there are visible erros in detection on the sides of the screen and further away. Originally, I had chosen a live stream of a Las Vegas casino. Because the detector classified objects such as casino slot machines as people, I was unable to effectively implement the detector on that video. This video had less objects, and thus was more successful. Although it missed people under the shadows, people that were too far away, and people in wheelchairs, the detector was sufficiently effective, but not perfect.
