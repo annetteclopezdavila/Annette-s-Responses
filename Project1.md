@@ -22,4 +22,4 @@ pandemic we are currently experiencing?
   - Another improvement to the machine would be to track movements and sound that are related to coughing or sneezing. Since coughing and sneezing can increase the amount of particles released into the air and inhaled by others, tracking those movement could help more accurately detect infections. 
   - I think a lot of people don't know how to gauge six feet. If this could be implemented through satellite and broadcasted onto people's phones/smartwatches wherever they go, people might be more cautious if they receive alerts of violations. It could be like your own Social Distancing GPS!
   
-  *Disclaimer: All numbers used in the above questions are ficticious and only used for proof of concept.
+  *Disclaimer: All numbers used in the above questions are ficticious and only used for proof of concept.*
