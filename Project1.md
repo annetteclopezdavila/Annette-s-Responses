@@ -11,7 +11,6 @@ Please Click Video for Viewing.
 
 2. Do you think this approach would be effective for estimating new infections in real time?  How would you implement such an approach in response to the COVID-19 
 pandemic we are currently experiencing?
-  - This approach does not seem to be an effective way for estimating new infections without improvement, but could work well to prove a model. In order to make this detector estimate infections, infected people would need to be detected or chosen at random. 
-3.
-What limitations or improvements might you include in order to improve your 
-proposed design?
+  - This approach does not seem to be an effective way for estimating new infections without improvement. In order to make this detector estimate infections, infected people would need to be detected or chosen at random. In order to detect those with coronavirus, a temperature check or COVID-19 test would need to be implemented before the people walked into the frame. Since this is logistically a pain to implement on a wide scale and can be very expensive, it is better to choose random people to carry COVID. For example, if it was known that there are an average 10 infections per 5,000 people, then the machine could select 1 person every 500 people to have the virus. The detector could then track the social distance infractions that person committed and thus count how many new possible infections could occur. With a sample big enough, it could potentially estimate infections. 
+  
+3. What limitations or improvements might you include in order to improve your proposed design?
