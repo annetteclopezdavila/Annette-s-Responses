@@ -8,3 +8,4 @@
 ## Project Index
 1. [Project 1: July 12, 2020](Project1.md)
 
+![foxdemo](https://github.com/foxdemo/foxdemo.github.io/blob/master/assets/images/avatar.png)
