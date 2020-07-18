@@ -5,9 +5,7 @@
   - Convolutions are layers added to a neural network that process images, aide in classification, and add a filter. This improves the performance of the model, as it can increase accuracy of its predictions. In other words, we are filtering specific characteristics in order to look at the data in the image that is necessary. What is a convolution doing? Looking deeper into what is actually occurring, we notice that convolutions are performing linear transformations on the image. A singular pixel is multiplied with a matrix of integers, or the filter. This is all added together to produce one value. The convolution will scan each input value and apply the filter to the pixel’s neighbors. However, this leaves a problem for pixels with no neighbors. Those pixels are then lost, and thus our image may become 26x26.
 
   - Image One:
-
     - Filter Applied: [ [5, -3, 0], [1, 5, 1], [0, 1, 10]]
-
     - Although the filter applied was meant to detect edges, our values may have overblown the exposure, thus wiping out a lot of the edges. This filter would probably not be very effective for edge detection.
 
    - Image Two:
@@ -15,9 +13,7 @@
 	   - This filter detected vertical lines. The filter eliminated the noise of the horizontal lines, thus making the picture look almost unrecognizable. However, it could be effective for vertical edges.
 
   - Image Three:
-
     - Filter Applied:   [ [-1, -150, 1], [-2, 0, 2], [-1, 150, 1]] 
-
     - This filter detected every edge it could detect. Due to the nature of photography, every image has some added noise. The filter seemed to have detected this noise and miscategorized it. For example, we know the sky in the original does not have any lines. However, we can clearly see that horizontal lines were detected by the filter. This filter would be good for capturing detail, but could add a lot of unnecessary data to the neural network. Thus, it may not be the most effective filter. 
 
 **Question 2:** Another useful method is pooling.  Apply a 2x2 ﬁlter to one of your convolved images, and plot the result.  In eﬀect what have you accomplished by applying this ﬁlter?  Can you determine from the code which type of pooling ﬁlter is applied, and the method for selecting a pixel value (see the following snippet)?  Did the result increase in size or decrease?  Why would this method be method?  Stretch goal:  again, instead of using misc.ascent(), apply the pooling ﬁlter to one of your transformed images.
@@ -31,13 +27,9 @@
   -	At ten epochs:
 
     - 32 Filters: Training Accuracy: 99.88%, Validation Accuracy: 98.80%
-
     - 16 Filters: Training Accuracy: 99.86%, Validation Accuracy: 98.49%
-
     - 64 Filters: Training Accuracy: 99.89%, Validation Accuracy: 98.95%
-
     - 3 Convolution Layers at 64 Filters: Training Accuracy: 99.52%, Validation Accuracy: 98.64%
-
     - DNN: Training Accuracy: 99.64%, Validation Accuracy: 97.97%
 
 	- In the example, CNN with 1 layer of convolutions worked better than DNN. This was expected, as CNNs are very effective and efficient on images. The convolutions allowed the neural network to use feature learning, which offers many benefits in image recognition tasks.  
