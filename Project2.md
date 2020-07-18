@@ -42,6 +42,7 @@ The final image at 12 epochs with a step size of 100 and weight of 30. Once agai
 ![image](https://user-images.githubusercontent.com/67920563/87858605-11416180-c8fd-11ea-80a8-684b115be086.png)
 
 I decided to try to change the weights from the usual 30 to 1 and 50. There are slight differences visible in the shading:
+
 ![image](https://user-images.githubusercontent.com/67920563/87858620-3a61f200-c8fd-11ea-86dc-c195d8490d1c.png)
 ![image](https://user-images.githubusercontent.com/67920563/87858637-61202880-c8fd-11ea-9cac-491aea3e2e3f.png)
 
