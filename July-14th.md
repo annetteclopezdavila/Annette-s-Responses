@@ -10,24 +10,15 @@
 
     - Although the filter applied was meant to detect edges, our values may have overblown the exposure, thus wiping out a lot of the edges. This filter would probably not be very effective for edge detection.
 
-  - Image One:
-
-    - Filter Applied: [ [5, -3, 0], [1, 5, 1], [0, 1, 10]]
-
-    - Although the filter applied was meant to detect edges, our values may have overblown the exposure, thus wiping out a lot of the edges. This filter would probably not be very effective for edge detection.
-
-  - Image Two:
-
-    -Filter Applied: [ [-1, 2, -1], [0, -4, 0], [1, 2, 1]]
-
+   - Image Two:
+    - Filter Applied: [ [-1, 2, -1], [0, -4, 0], [1, 2, 1]]
     - This filter detected vertical lines. The filter eliminated the noise of the horizontal lines, thus making the picture look almost unrecognizable. However, it could be effective for vertical edges.
 
   - Image Three:
 
-    - Filter Applied: [ [-1, -150, 1], [-2, 0, 2], [-1, 150, 1]]
+    - Filter Applied:   [ [-1, -150, 1], [-2, 0, 2], [-1, 150, 1]] 
 
     - This filter detected every edge it could detect. Due to the nature of photography, every image has some added noise. The filter seemed to have detected this noise and miscategorized it. For example, we know the sky in the original does not have any lines. However, we can clearly see that horizontal lines were detected by the filter. This filter would be good for capturing detail, but could add a lot of unnecessary data to the neural network. Thus, it may not be the most effective filter. 
-
 
 
 2. **Question 2:** Another useful method is pooling.  Apply a 2x2 ﬁlter to one of your convolved images, and plot the result.  In eﬀect what have you accomplished by applying this ﬁlter?  Can you determine from the code which type of pooling ﬁlter is applied, and the method for selecting a pixel value (see the following snippet)?  Did the result increase in size or decrease?  Why would this method be method?  Stretch goal:  again, instead of using misc.ascent(), apply the pooling ﬁlter to one of your transformed images.
