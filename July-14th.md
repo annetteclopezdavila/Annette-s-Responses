@@ -11,8 +11,8 @@
     - Although the filter applied was meant to detect edges, our values may have overblown the exposure, thus wiping out a lot of the edges. This filter would probably not be very effective for edge detection.
 
    - Image Two:
-   	- Filter Applied: [ [-1, 2, -1], [0, -4, 0], [1, 2, 1]]
-    - This filter detected vertical lines. The filter eliminated the noise of the horizontal lines, thus making the picture look almost unrecognizable. However, it could be effective for vertical edges.
+	   - Filter Applied: [ [-1, 2, -1], [0, -4, 0], [1, 2, 1]]
+	   - This filter detected vertical lines. The filter eliminated the noise of the horizontal lines, thus making the picture look almost unrecognizable. However, it could be effective for vertical edges.
 
   - Image Three:
 
