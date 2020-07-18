@@ -31,12 +31,11 @@
     - 64 Filters: Training Accuracy: 99.89%, Validation Accuracy: 98.95%
     - 3 Convolution Layers at 64 Filters: Training Accuracy: 99.52%, Validation Accuracy: 98.64%
     - DNN: Training Accuracy: 99.64%, Validation Accuracy: 97.97%
+- In the example, CNN with 1 layer of convolutions worked better than DNN. This was expected, as CNNs are very effective and efficient on images. The convolutions allowed the neural network to use feature learning, which offers many benefits in image recognition tasks.  
 
-	- In the example, CNN with 1 layer of convolutions worked better than DNN. This was expected, as CNNs are very effective and efficient on images. The convolutions allowed the neural network to use feature learning, which offers many benefits in image recognition tasks.  
+- Between the CNN output, the neural network with 64 filters worked best. This shows that the task was more complex and thus required a higher number of filters to optimize accuracy. Running it at 512 filters resulted in a lower accuracy (99.86%). Thus, although it was better at 64 filters, too many filters can overfit the data.
 
-  - Between the CNN output, the neural network with 64 filters worked best. This shows that the task was more complex and thus required a higher number of filters to optimize accuracy. Running it at 512 filters resulted in a lower accuracy (99.86%). Thus, although it was better at 64 filters, too many filters can overfit the data.
-
-  - Adding more convolution layers decreased the accuracy. This perhaps can be explained by overfitting of the data. Since it is a relatively small data set, such a high number of convolution layers was unnecessary.
+- Adding more convolution layers decreased the accuracy. This perhaps can be explained by overfitting of the data. Since it is a relatively small data set, such a high number of convolution layers was unnecessary.
 
 	
 
