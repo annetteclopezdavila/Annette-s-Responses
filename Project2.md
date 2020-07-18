@@ -1,7 +1,9 @@
 # Creating Some Art with Neural Style Transfer!
-When I first saw this project, I was really excited because I love photography and photoshopping images! I had very few problems with running and altering the code for the first half, but it did crash my computer several times. I was only able to do this on google colab, but the kernel was really struggling and would often freeze. As soon as I got to the stretch goals, I began to get many strange Value Errors whenever I would change the image. Due to the waiting times, I was not able to continue trying to debug that part of the project. I think that my error was related to weights/step size.
+When I first saw this project, I was really excited because I love photography and photoshopping images! I love it so much so that I began a small design business that specializes in goodies such as t-shirts, mugs, water bottles, and more!
 
-![image](https://user-images.githubusercontent.com/67920563/87858147-d25ddc80-c8f9-11ea-9c08-2b96f0eb7e17.png)
+I had very few problems with running and altering the code for the first half, but it did crash my computer several times. I was only able to do this on google colab, but the kernel was really struggling and would often freeze. As soon as I got to the stretch goals, I began to get many strange Value Errors whenever I would change the image. Due to the waiting times, I was not able to continue trying to debug that part of the project. I think that my error was related to weights/step size.
+
+
 
 ## The First Image: The Northern Lights
 The first image I chose was a beautiful image of the Northern Lights. I applied Wassily Kandinsky's Composition 7 onto the Northern Lights.
@@ -39,7 +41,35 @@ The final image at 12 epochs with a step size of 100 and weight of 30. Once agai
 
 ![image](https://user-images.githubusercontent.com/67920563/87858605-11416180-c8fd-11ea-80a8-684b115be086.png)
 
-I decided to try to change the weights from the usual 30 to 1 and 50. There are slight differences:
+I decided to try to change the weights from the usual 30 to 1 and 50. There are slight differences visible in the shading:
 ![image](https://user-images.githubusercontent.com/67920563/87858620-3a61f200-c8fd-11ea-86dc-c195d8490d1c.png)
 ![image](https://user-images.githubusercontent.com/67920563/87858637-61202880-c8fd-11ea-9cac-491aea3e2e3f.png)
 
+This image perhaps would have resulted better with less steps, as the tests demonstrated. Too much of the image was swallowed at the settings I chose for the final product.
+
+## Testing more Images
+I began to play around with images that had more detail after my two failures with landscape pictures. The first image is an illustration of a lion, and the second is a picture I took last week at the botanical gardens. I think illustrations tend to work better for this method, as it is easier to detect lines and edges.
+
+![image](https://user-images.githubusercontent.com/67920563/87858714-e1df2480-c8fd-11ea-8e67-48c437890acb.png)
+![image](https://user-images.githubusercontent.com/67920563/87858717-e60b4200-c8fd-11ea-8d1b-a992da533ef6.png)
+
+![image](https://user-images.githubusercontent.com/67920563/87858720-eefc1380-c8fd-11ea-87ca-56acf2ae4967.png)
+![image](https://user-images.githubusercontent.com/67920563/87858726-fa4f3f00-c8fd-11ea-9a36-ed27c29a6458.png)
+
+I really love how the lion turned out, as it is one of my favorite animals and a symbol of strength and courage.
+
+## Image for JumpStart Data Science T-Shirt
+I was really excited for this aspect of the project, as I have been designing t-shirts for many years! Unfortunately, I had a really hard time coming up with a design that looked good with the HD look this method gives an image. After much trial and error, I did find an image that I really love, as it feels both relevant and colorful (I LOVE colors). The image I used was of a robot head with a neural network radiating out of it:
+
+[image](https://user-images.githubusercontent.com/67920563/87858895-29b27b80-c8ff-11ea-8bca-49595751b458.png)
+
+I love the color scheme the original illustrator gave it, but with the same transfer images I used above, I made many other versions of it:
+
+![image](https://user-images.githubusercontent.com/67920563/87858937-9594e400-c8ff-11ea-833d-ae6a595a05d3.png)
+![image](https://user-images.githubusercontent.com/67920563/87858946-ad6c6800-c8ff-11ea-84c7-a0d6e87c1831.png)
+![image](https://user-images.githubusercontent.com/67920563/87858948-b4937600-c8ff-11ea-97ee-e4fec1659260.png)
+
+My favorite image is the following:
+![image](https://user-images.githubusercontent.com/67920563/87858967-e0166080-c8ff-11ea-8368-3d807cc5b662.png)
+
+I have many possible ideas for how to put this on a t-shirt and with several texts!
