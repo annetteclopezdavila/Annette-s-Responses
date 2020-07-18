@@ -9,25 +9,29 @@
   - Image One:
     - Filter Applied: [ [5, -3, 0], [1, 5, 1], [0, 1, 10]]
     - Although the filter applied was meant to detect edges, our values may have overblown the exposure, thus wiping out a lot of the edges. This filter would probably not be very effective for edge detection.
+    
     ![image](https://user-images.githubusercontent.com/67920563/87845000-e15c7480-c890-11ea-9eec-c8429c4a93fc.png)
 
    - Image Two:
 	   - Filter Applied: [ [-1, 2, -1], [0, -4, 0], [1, 2, 1]]
 	   - This filter detected vertical lines. The filter eliminated the noise of the horizontal lines, thus making the picture look almost unrecognizable. However, it could be effective for vertical edges.
+	   
 	   ![image](https://user-images.githubusercontent.com/67920563/87845023-25e81000-c891-11ea-82ea-68fab5394a6c.png)
 
   - Image Three:
     - Filter Applied:   [ [-1, -150, 1], [-2, 0, 2], [-1, 150, 1]] 
     - This filter detected every edge it could detect. Due to the nature of photography, every image has some added noise. The filter seemed to have detected this noise and miscategorized it. For example, we know the sky in the original does not have any lines. However, we can clearly see that horizontal lines were detected by the filter. This filter would be good for capturing detail, but could add a lot of unnecessary data to the neural network. Thus, it may not be the most effective filter. 
+    
     ![image](https://user-images.githubusercontent.com/67920563/87845065-b0c90a80-c891-11ea-9d2e-20d4d6b9bd9e.png)
 
 **Question 2:** Another useful method is pooling.  Apply a 2x2 ﬁlter to one of your convolved images, and plot the result.  In eﬀect what have you accomplished by applying this ﬁlter?  Can you determine from the code which type of pooling ﬁlter is applied, and the method for selecting a pixel value (see the following snippet)?  Did the result increase in size or decrease?  Why would this method be method?  Stretch goal:  again, instead of using misc.ascent(), apply the pooling ﬁlter to one of your transformed images.
+![image](https://user-images.githubusercontent.com/67920563/87845366-8a589e80-c894-11ea-98f1-399dd14ea621.png)
+
   -	Pooling refers to a process which reduces the dimensionality of an input in order to increase accuracy and efficiency.  In more simpler terms, pooling reduces the amount of data that must be processed in a neural network while maintaining the feature detection. This is done by combining the output of a cluster of pixels into a smaller unit. There are many methods of downsampling; more specifically, we will be looking at max pooling. Max pooling applies a max filter to the cluster of pixels. The filter will take the max value of the cluster and create a new matrix with those max values. Thus, we have a reduced image (1/4 size of original) that reduces the chances of overfitting a model and optimizes computational costs.
   -	At first glance, the pooled image may not seem very different. Looking closer, we can see that the corresponding features were enhanced. Because of the decrease in size, we should be able to see a more blurry/distorted image when zooming in comparatively. *Disclaimer: Because both images were copied and resized, such differences may not be noticeable from the presented image*
 ![image](https://user-images.githubusercontent.com/67920563/87845297-10c0b080-c894-11ea-925f-6ef634a85f4b.png)
 ![image](https://user-images.githubusercontent.com/67920563/87845305-259d4400-c894-11ea-8d2b-534171024618.png)
 ![image](https://user-images.githubusercontent.com/67920563/87845323-3d74c800-c894-11ea-8e6e-10a2d4adaf0c.png)
-![image](https://user-images.githubusercontent.com/67920563/87845366-8a589e80-c894-11ea-98f1-399dd14ea621.png)
 
 **Question 3:**  The lecture for today (Coding with Convolutional Neural Network) compared the application of our previously speciﬁed deep neural network with a newly speciﬁed convolutional neural network. Instead of using the fashion_MNIST dataset, use the mnist dataset (the hand written letters) to train and compare your DNN and CNN output. Were you able to improve your model by adding the Conv2D and MaxPooling2D layers to your neural network?  Plot the convolutions graphically, include them in your response and describe them.  Edit the convolutions be changing the 32s to either 16 or 64 and describe what impact this had on accuracy and training time. What happens if you add more convolution layers?
 
