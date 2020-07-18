@@ -26,4 +26,5 @@
   
 5. **Question 5**   What was the signiﬁcance of comparing the 4 diﬀerent sized models (tiny, small, medium, large)?  Can you include a plot to illustrate your answer?
 	- The comparison graph allows one to pick the optimal model quickly. From the graph we can infer which model reached its peak, which needed more fitting, and which was overfit at whatever epoch chosen. For example, it can be seen that the large model became overfit very quickly in comparison to the others. This graph also allows us to note something that would have been more difficult to gauge without it: trends. With the comparison model, we can note that for this set of data, the larger the model, the more quickly it overfits. Such trends can help us know how to improve the model. For example, let us suggest that I had started with the medium model. Although it would be safe to have guessed that a larger model probably would have overfit the data even more, comparison graphs can confirm that a smaller model will not underfit/overfit the model in this case. 
+	
 ![image](https://user-images.githubusercontent.com/67920563/87845598-c260e100-c896-11ea-8149-8ecc908347a7.png)
