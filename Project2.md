@@ -3,7 +3,7 @@ When I first saw this project, I was really excited because I love photography a
 
 I had very few problems with running and altering the code for the first half, but it did crash my computer several times. I was only able to do this on google colab, but the kernel was really struggling and would often freeze. As soon as I got to the stretch goals, I began to get many strange Value Errors whenever I would change the image. Due to the waiting times, I was not able to continue trying to debug that part of the project. I think that my error was related to weights/step size.
 
-
+![image](https://user-images.githubusercontent.com/67920563/87859097-c1649980-c900-11ea-9165-3a44a4d51736.png)
 
 ## The First Image: The Northern Lights
 The first image I chose was a beautiful image of the Northern Lights. I applied Wassily Kandinsky's Composition 7 onto the Northern Lights.
@@ -70,6 +70,7 @@ I love the color scheme the original illustrator gave it, but with the same tran
 ![image](https://user-images.githubusercontent.com/67920563/87858948-b4937600-c8ff-11ea-97ee-e4fec1659260.png)
 
 My favorite image is the following:
+
 ![image](https://user-images.githubusercontent.com/67920563/87858967-e0166080-c8ff-11ea-8368-3d807cc5b662.png)
 
 I have many possible ideas for how to put this on a t-shirt and with several texts!
