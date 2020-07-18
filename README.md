@@ -8,6 +8,7 @@
 2. [Response 2: July 8th, 2020](July-8th.md)
 3. [Response 3: July 9th, 2020](July-9th.md)
 4. [Response 4: July 14th, 2020](July-14th.md)
+5. [Response 5: July 15th, 2020](July-15th.md)
 
 ## Project Index
 1. [Project 1: July 12, 2020](Project1.md)
