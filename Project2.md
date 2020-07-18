@@ -62,7 +62,7 @@ I really love how the lion turned out, as it is one of my favorite animals and a
 ## Image for JumpStart Data Science T-Shirt
 I was really excited for this aspect of the project, as I have been designing t-shirts for many years! Unfortunately, I had a really hard time coming up with a design that looked good with the HD look this method gives an image. After much trial and error, I did find an image that I really love, as it feels both relevant and colorful (I LOVE colors). The image I used was of a robot head with a neural network radiating out of it:
 
-[image](https://user-images.githubusercontent.com/67920563/87858895-29b27b80-c8ff-11ea-8bca-49595751b458.png)
+![image](https://user-images.githubusercontent.com/67920563/87858895-29b27b80-c8ff-11ea-8bca-49595751b458.png)
 
 I love the color scheme the original illustrator gave it, but with the same transfer images I used above, I made many other versions of it:
 
