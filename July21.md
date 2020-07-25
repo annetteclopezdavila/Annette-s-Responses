@@ -71,6 +71,6 @@ o	tf.estimator.DNNLinearCombinedClassifier(
 	![image](https://user-images.githubusercontent.com/67920563/88458418-f0788f00-ce5b-11ea-8ba4-1a21df173c4d.png)
 	
 	-	The predicted probabilities plot is skewed to the right, meaning most people had less than 50% chance of survival. Strangely enough, the lowest point of the graph is at the half way point. The probability for survival increases at 70% drastically, thus prompting us to wonder what could have made the data skewed towards 0 and 1 but not 0.5.
-	<img width="229" alt="tensorr" src="https://user-images.githubusercontent.com/67920563/88457899-eb194580-ce57-11ea-9314-7336fb3bdf04.PNG">
+	![image](https://user-images.githubusercontent.com/67920563/88458472-4a795480-ce5c-11ea-9b76-d2010b26b5be.png)
 	
 	-	The ROC curve shows the tradeoff between the true positive rate and false positive rate. As can be seen, the curve mimics a logarithmic shape, meaning that it plateaus as the false positive rate increases. The curve is skewed towards the true positive rate, meaning that the tradeoff in this case did pay off! The true positive rate is higher than the false positive rate. Why does the curve plateau though? Is our model overfit or underfit? Because the accuracy is still a little low, I would first try to make the model improve before troubleshooting for other problems.
