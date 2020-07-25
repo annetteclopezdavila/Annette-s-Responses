@@ -64,9 +64,12 @@
 	-	The classifier.train() command trains the model. Its input can be the steps of the function as well as the training input function. The first part of the command, classifier, describes which estimator we are using. In this example, we are referring to DNN Classifier. However, if it were the LinearRegressor estimator, our command could look like linear_regressor.train(). The classifier command is defined earlier in the model when we instantiate the estimator. For example, classifier has been defined as classifier=tf.estimator.DNNClassifier(). Thus, this is the part of the code that actually lets us apply the estimator!
 	-	Our training input function was defined with all the other input functions; however, this one takes the training set features and labels, specifies batch size, whether the data is shuffled, and the number of epochs to iterate over the data.
 5. Redeﬁne your classiﬁer using the DNNLinearCombinedClassiﬁer() as well as the LinearClassiﬁer().  Retrain your model and compare the results using the three diﬀerent estimators you instantiated.  Rank the three estimators in terms of their performance.
-	-	LinearClassifier: 0.967 accuracy
+	-	LinearClassifier: 0.967 
 	-	DNNLinearCombinedClassifier:0.733
 	-	DNNClassifier: 0.533
+	- The Linear Classifier worked best, the DNNLinearCombinedClassifier worked second best, and the DNNClassifier was the worst
+	
+	
 ### Build a Linear Model
 1. Using the dftrain dataset, upload an image where you used the seaborn library to produce a sns.pairplot().  Also include a histogram of age using the training set and compare it to the seaborn plot for that same feature (variable).  What interpretation can you provide of the data based on this plot? 
 
