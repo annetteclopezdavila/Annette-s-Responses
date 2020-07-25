@@ -8,17 +8,23 @@
 2. What is a dense feature?  For example, if you execute example = dict(dftrain) and then tf.keras.layers.DenseFeatures(your_features)(your_object).numpy(), how has the content of your data frame been transformed?  Why might this be useful?
   -	Dense features produce tensors. As seen with the one-hot-encoding, the categorical features are turned into vectors. Zeros are placed to show an absence of data, which could further help efficiency in the machine. As we often saw in Data 146, missing data often means that the data must be reorganized in order for the machine to make sense of it, or thrown out.  Because throwing data out can mean we lose other valuable data, putting a placeholder for the absence of data can help us mitigate such losses.
 3. Provide a histogram of the probabilities for the logistic regression as well as your boosted tree model.  How do you interpret the two diﬀerent models?  Are their predictions essentially the same or is there some area where they are noticeable diﬀerent.  Plot the probability density function of the resulting probability predictions from the two models and use them to further illustrate your argument.  Include the ROC plot and interpret it with regard to the proportion of true to false positive rates, as well as the area under the ROC curve.  How does the measure of the AUC reﬂect upon the predictive power of your model?
+
   ### Linear
+  
   <img width="228" alt="linear" src="https://user-images.githubusercontent.com/67920563/88457927-0be19b00-ce58-11ea-9c3b-0e7def3c7606.PNG">
+  
   ### Boosted Trees
+  
  <img width="218" alt="boosted trees" src="https://user-images.githubusercontent.com/67920563/88457912-fb312500-ce57-11ea-80b8-ee0c20fd3905.PNG">
  
   -	The prediction plots both are right leaning. Although the have a slightly different tail, we essentially get very similar information. In the linear mode, there is a slight increase at 0.6. In the boosted tree model, the probability spikes at 0.99. The linear model did show that the peak frequency was around 75, while the boosted trees spiked at ~83. Both models do not have probabilities of 0% nor 100%. Although the predictions both have very similar information, one must be more accurate than the other when looking closer at specifics. The linear model’s accuracy was 0.765 while the boosted tree model had an accuracy of 0.818. This both proves that the trends are very similar in information given, and shows us which model is slightly better.
 <img width="213" alt="7 23roc" src="https://user-images.githubusercontent.com/67920563/88457904-f2405380-ce57-11ea-9cf3-89b51570637b.PNG">
 
 -	The ROC plot leans towards the true positive rate very quickly at first; the gradient is very steep up until 0.2 on the false positive rate. After 0.5, the model plateaus. When examining ROC, we should always be looking for how close the curve is to the top left corner, as this would indicate better accuracy. Thus, by looking at the curve, we can see that the curve is significantly close to the left corner with a little bit of improvement. But how do we know how much improvement exactly? Another useful measure to interpret the ROC curve is area. The area under the curve is equivalent to the probability that when a positive and negative instance are drawn, the function will assign a higher value to the positive instance. Thus, the higher the area under the curve is, the better our model is.
+
 ### Boosted Trees continued (with model understanding)
 1. Upload your feature values contribution to predicted probability horizontal bar plot as well as your violin plot.  Interpret and discuss the two plots.  Which features appear to contribute the most to the predicted probability?
+
   <img width="286" alt="boosted trees continued 1" src="https://user-images.githubusercontent.com/67920563/88457909-fb312500-ce57-11ea-9f07-4d2153cc91c5.PNG">
   <img width="290" alt="violin plot" src="https://user-images.githubusercontent.com/67920563/88457931-14d26c80-ce58-11ea-9630-275ec9b06d7a.PNG">
   
