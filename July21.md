@@ -58,6 +58,9 @@ o	tf.estimator.DNNLinearCombinedClassifier(
 	-	DNNClassifier: 0.533
 ### Build a Linear Model
 1. Using the dftrain dataset, upload an image where you used the seaborn library to produce a sns.pairplot().  Also include a histogram of age using the training set and compare it to the seaborn plot for that same feature (variable).  What interpretation can you provide of the data based on this plot? 
+
+<img width="341" alt="input" src="https://user-images.githubusercontent.com/67920563/88457924-084e1400-ce58-11ea-89d6-ff1abb8a6439.PNG">
+
 	-	When looking at the age x age plot in the pairplot in the top left corner, we can see that the pdf follows a very similar trend to the histogram. The plots peak at about ages 20-30, signifying that this was the average age of people on board.
 2. What is the diﬀerence between a categorial column and a dense feature?
 	-	Categorical columns are types of feature columns that contain non-numerical strings as input. A dense feature uses a categorical column to produce a tensor, or vector. Categorical columns must first be transformed into indicator columns in order for DenseFeatures to accept it. This is because DenseFeatures only accepts dense tensors. Dense tensors are equivalent to the concept of arrays in Python.
