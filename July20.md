@@ -26,9 +26,15 @@ When I first explored this idea, I wanted to create a CNN using known biomarkers
 <img width="192" alt="cats and dogs" src="https://user-images.githubusercontent.com/67920563/88457908-fa988e80-ce57-11ea-8757-b438be1ba37a.PNG">
 - The first graph depicts training and validation accuracy while the second features their respective loss. In the first graph, the training accuracy (red line) increases as epochs increase while the validation accuracy plateaus. In the second graph, the training loss decreases and the validation loss slightly begins to increase around the seventh epoch. Thus, we can determine that after this point, the model is beginning to be overfit. 
 5. **Question 5** Use the model to predict 3 dog images and 3 cat images.  Upload you images and the prediction.  How did your model perform in practice?  Do you have any ideas of how to improve the model’s performance?
+**Image 1 was labeled as a dog**
 ![5b7fdeab1900001d035028dc](https://user-images.githubusercontent.com/67920563/88457884-d89f0c00-ce57-11ea-9de1-0a7d0a4398ac.jpeg)
+**Image 2 was labeled as a dog**
 ![235430-2000x1332-australian-shepherd-puppy](https://user-images.githubusercontent.com/67920563/88457885-d9d03900-ce57-11ea-8e6c-b26496bb14d9.jpg)
+**Image 3 was labeled as a cat**
 ![adorable-white-pomeranian-puppy-spitz-921029690-5c8be25d46e0fb000172effe](https://user-images.githubusercontent.com/67920563/88457873-d472ee80-ce57-11ea-8d34-d0a5f1c2bf3d.jpg)
+**Image 4 was labeled as a cat**
 ![close-up-of-cat-lying-on-floor-at-home-908763830-1d61bee6961b45ee8a55bdfa5da1ebb3](https://user-images.githubusercontent.com/67920563/88457878-d5a41b80-ce57-11ea-84b5-d4aff42f9666.jpg)
+**Image 5 was labeled as a cat**
 ![original](https://user-images.githubusercontent.com/67920563/88457880-d63cb200-ce57-11ea-98f9-71d125d6ad03.jpg)
+**Image 6 was labeled as a dog**
 ![Thinking-of-getting-a-cat](https://user-images.githubusercontent.com/67920563/88457889-ddfc5680-ce57-11ea-8465-142bdde34130.png)
