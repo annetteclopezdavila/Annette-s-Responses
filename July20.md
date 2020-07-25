@@ -14,6 +14,9 @@ When I first explored this idea, I wanted to create a CNN using known biomarkers
 	
 	- The first equation computes the exponential average of the square of the gradient. This is done for each parameter. This helps us weigh the recent gradient updates with the past ones. The second equation determines step size, which is determined by the exponential average. This equation will help avoid bouncing between two ridges. The third equation updates the step. In simpler terms, RMSProp will decrease the size of the steps towards the minima if they are too large. 
 	- So why did we stop using Adam for this one? Ones best optimizer usually relies on use of effective parameters. Adam is sensitive to such, thus making it harder to tune. Secondly, using moment will benefit some types of problems, but affect others. 
+	
+	<img width="417" alt="visual optimizres" src="https://user-images.githubusercontent.com/67920563/88457891-dfc61a00-ce57-11ea-8a64-63c2b9e6b5e3.PNG">
+	
 2.	**Question 2** Describe your selected loss function and it’s implementation.  How is it eﬀectively penalizing bad predictions? 
 	- We are using the Binary_crossentropy loss function. This implies that there are two labels, one of which we are trying to predict for some feature. This function works with probabilities; the probability of being label A is 1.0 while the probability of being label B is 0.0. Although it may seem counterintuitive to say one has a label of 0.0, it is simply saying that label B is the absence of label A. The loss function will evaluate how good or bad a prediction will be. By using a logistic regression to classify our points, we can know the probability of it being label A for any x. By comparing each probability to its true probability using the negative log, we can average all the losses at each point and compute one binary cross-entropy/log loss. 
 3.	**Question 3** What is the purpose of the metric= argument in your model.compile() function? 
