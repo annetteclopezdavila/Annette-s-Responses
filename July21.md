@@ -1,3 +1,5 @@
+## July 21, 2020
+
 ### Premade estimators
 1. How did you split the labels from the training set?  What was the name of the labels dataset?
 	-	In order to split the labels, we use the pop function. The model will be using the species labels which are Setosa, Versicolor, Virginica.
@@ -45,6 +47,8 @@ o	tf.estimator.DNNLinearCombinedClassifier(
 3. What are the purposes input functions and deﬁning feature columns?
 	-	Input functions: return a Dataset object which then outputs a label for the training batch and a dictionary of feature column names that map them to the tensors containing feature data. In other words, input function pass the input data to the model
 	-	Feature Columns: specifications for how model should interpret the data from the features dictionaries. The feature columns describe the features you want the model to use.
+	<img width="361" alt="estimators" src="https://user-images.githubusercontent.com/67920563/88458116-92e34300-ce59-11ea-8fc1-4bda58de5648.PNG">
+	
 4. Describe the command classiﬁer.train() in detail.  What is the classiﬁer and how did you deﬁne it?  Which nested function (and how have you deﬁned it) are you applying to the training and test detests?
 	-	The classifier.train() command trains the model. Its input can be the steps of the function as well as the training input function. The first part of the command, classifier, describes which estimator we are using. In this example, we are referring to DNN Classifier. However, if it were the LinearRegressor estimator, our command could look like linear_regressor.train(). The classifier command is defined earlier in the model when we instantiate the estimator. For example, classifier has been defined as classifier=tf.estimator.DNNClassifier(). Thus, this is the part of the code that actually lets us apply the estimator!
 	-	Our training input function was defined with all the other input functions; however, this one takes the training set features and labels, specifies batch size, whether the data is shuffled, and the number of epochs to iterate over the data.
