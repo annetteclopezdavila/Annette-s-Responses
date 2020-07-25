@@ -59,7 +59,8 @@ o	tf.estimator.DNNLinearCombinedClassifier(
 ### Build a Linear Model
 1. Using the dftrain dataset, upload an image where you used the seaborn library to produce a sns.pairplot().  Also include a histogram of age using the training set and compare it to the seaborn plot for that same feature (variable).  What interpretation can you provide of the data based on this plot? 
 
-<img width="341" alt="input" src="https://user-images.githubusercontent.com/67920563/88457924-084e1400-ce58-11ea-89d6-ff1abb8a6439.PNG">
+<img width="295" alt="PAIRPlOT" src="https://user-images.githubusercontent.com/67920563/88457930-0dab5e80-ce58-11ea-8db5-c628a5f09992.PNG">
+<img width="272" alt="ENCODING" src="https://user-images.githubusercontent.com/67920563/88458115-924aac80-ce59-11ea-9516-1dcdca4ccd01.PNG">
 
 	-	When looking at the age x age plot in the pairplot in the top left corner, we can see that the pdf follows a very similar trend to the histogram. The plots peak at about ages 20-30, signifying that this was the average age of people on board.
 2. What is the diﬀerence between a categorial column and a dense feature?
