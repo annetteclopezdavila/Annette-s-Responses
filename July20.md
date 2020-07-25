@@ -23,3 +23,4 @@ When I first explored this idea, I wanted to create a CNN using known biomarkers
 ![adorable-white-pomeranian-puppy-spitz-921029690-5c8be25d46e0fb000172effe](https://user-images.githubusercontent.com/67920563/88457873-d472ee80-ce57-11ea-8d34-d0a5f1c2bf3d.jpg)
 ![close-up-of-cat-lying-on-floor-at-home-908763830-1d61bee6961b45ee8a55bdfa5da1ebb3](https://user-images.githubusercontent.com/67920563/88457878-d5a41b80-ce57-11ea-84b5-d4aff42f9666.jpg)
 ![original](https://user-images.githubusercontent.com/67920563/88457880-d63cb200-ce57-11ea-98f9-71d125d6ad03.jpg)
+![Thinking-of-getting-a-cat](https://user-images.githubusercontent.com/67920563/88457889-ddfc5680-ce57-11ea-8465-142bdde34130.png)
