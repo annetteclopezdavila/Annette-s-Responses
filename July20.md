@@ -22,6 +22,9 @@ When I first explored this idea, I wanted to create a CNN using known biomarkers
 3.	**Question 3** What is the purpose of the metric= argument in your model.compile() function? 
 	- A metric also judges the performance of the model; however, the results do not train the model. The model.compile() function is used to take a list of metrics.
 4.	**Question 4** Plot the accuracy and loss results for both the training and test datasets.  Include these in your response.  Assess the model and describe how good you think it performed.
+
+<img width="192" alt="cats and dogs" src="https://user-images.githubusercontent.com/67920563/88457908-fa988e80-ce57-11ea-8757-b438be1ba37a.PNG">
+
 	- The first graph depicts training and validation accuracy while the second features their respective loss. In the first graph, the training accuracy (red line) increases as epochs increase while the validation accuracy plateaus. In the second graph, the training loss decreases and the validation loss slightly begins to increase around the seventh epoch. Thus, we can determine that after this point, the model is beginning to be overfit. 
 5. **Question 5** Use the model to predict 3 dog images and 3 cat images.  Upload you images and the prediction.  How did your model perform in practice?  Do you have any ideas of how to improve the model’s performance?
 ![5b7fdeab1900001d035028dc](https://user-images.githubusercontent.com/67920563/88457884-d89f0c00-ce57-11ea-9de1-0a7d0a4398ac.jpeg)
