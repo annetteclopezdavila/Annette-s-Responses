@@ -25,20 +25,29 @@ This loss function converts everything into a categorical format. Although it se
 it was not the best choice for this dataset. The biggest mistake, however, was guaging the data on accuracy. The accuracy was so low, it was rounded to 0.
 After trying to apply more images into this model, my computer crashed and RAM errors began to ensue. 
 
-##Phase Two: Reorienting Myself and Creating Model 2
+## Phase Two: Reorienting Myself and Creating Model 2
 After a few tears of panic and many strange settings changes to my computer, I decided to scrap the entire model and Pycharm.
 I began on my quest to find a way to process this project on Colab, since Jupyter Notebook and Pycharm both use outdated Python Versions and TensorFlow versions. 
 Uploading data from my hard drive to colab was not working. Thus, I had to upload my data into google drive and later download it into Colab. 
 Now that I was finally oriented, had a better understanding of the project, and had overcome the fear that I had to make my own DNN, I began on my second model.
 Because managing files is a little different on Google Drive, I had to scrap my for loop and upload the seperate training and testing files with the amount of images I needed.
 I split my first data set into 100 training images and 30 testing images. My second model had a few changes, but some conceptual errors.
-I used a Sequential Model with one Flat layer and 3 Dense layers. My model contained 256 neurons in the first Dense layer, 128 in the second, and 1 in the third.
+I used a Sequential Model with one Flat layer and 3 Dense layers. My model contained 256 neurons in the first Dense layer, 128 in the second, and 1 in the third. I added a step size of 10 and a batch size of 5 and trained my model for 5 epochs.
 I knew I had to change the loss function, yet I really wasn't sure which one to use yet. I was still a little disoriented, and chose binary_crossentropy loss function.
-This loss function is used for binary multi-label classification. To this very moment, I am not sure what came over me to use that, since very obviously that was the wrong loss function.
-This was not a binary problem; that loss function is better off for the cats vs dogs problem or the horse vs human. What we *were* looking for in this problem, were floats. To top it all off,
+This loss function is used for binary multi-label classification. To this very hour, I am still not sure what came over me to choose that, since very obviously that was the wrong loss function.
+This was not a binary problem; that loss function is better off for the cats vs dogs problem or the horse vs human NN. What we *were* looking for in this problem, were floats. To top it all off,
 I still used the accuracy metric. Because I was getting a 0 in accuracy and losses of about 300, I decided that I needed to do some more research before blindly continuing.
-Below is my output for the 2nd model. As seen, I had
-INSERT FIRST MODEL WITH 100
+Below is my output for the 2nd model. As seen, I had terrible results.
+INSERT FIRST W STEP SIZE
+
+## PHASE 3: Seeing the Light at Model 3
+After some internet searching, I found a table that cleared up what the floating names in my head meant (not that I didn't know; the concepts I learn in ML tend to get tangled in my head). Below is the beautiful chart I found (I lost the source unfortunately). 
+
+#INSERT CHART
+
+From the chart, I was able to deduce several things I needed to know: I needed to find a float point since I needed to predict a population, the problem was some type of regression, and my loss function needed to be MSE!
+Thus, I fixed my code and produced my best DNN model
+
 
 
 
