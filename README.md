@@ -16,6 +16,7 @@
 ## Project Index
 1. [Project 1: July 12, 2020](Project1.md)
 2. [Project 2: July 18, 2020](Project2.md)
+3. [Project 3: July 26, 2020](Project3.md)
 
 
 
