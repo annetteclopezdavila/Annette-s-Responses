@@ -63,9 +63,18 @@ Because adding more neurons or more epochs would be too computationally expensiv
 
 Thus, this model was only increasing in error.
 
+The second model I ran on the 100:30 training and testing split and had promisng results. I used one convolutional layer of 64 neurons and changed the epochs to 3. Everything else stayed the same. 
+#insert Summary Final 3 epochs
+My MSE was 362 while my MAE was about ~15.  
+#CNN Real 3
+This was the best MSE out of all the models, and thus I ran it several times to see if it was consistent. Below are my MSE and MAE graphs.
+#MSE CNN REAL
+#MAE REAL 3
+My validation loss was 73 and the MAE was 8.52. Thus, the validation results were not all that different than the previous models.
 
-
-
+## Conclusion
+Because the CNN was my best model, I decided to run a training: test split of 1000:40. This produced an MSE of ~50. In my excitement, I closed out on the browser, and lost all my graphs and data before I saved it. I am currently running it again but am not sure if it will be ready before midnight due to the fact that it continues to crash. It could have been a soletary case, considering none of my previous models with smaller data sets were close to such a small MSE.
+I decided to then try running a model with a 3000:30 split. Although my model would run through the majority of my training data, the session would crash due to a RAM error. Thus, I was only able to run it on 1040 images total. Overall, I do not feel like I did a very good job with minimizing the losses. Perhaps this was due to the fact that for the majority of the project, I was still figuring out how to write a better DNN. For the future, I plan to analyze the problem *before* starting to code. Although I expected my first model to immediately show me what I would need to fix, it would have saved many hours to figure out the type of problem, what type of output I needed, how big my data set was and which models worked best with those sizes, and troubleshoot future problems I could have. Had I initially thought that out, I would have avoided my many steps of catastrophe, and also worked on better solutions rather than just producing a model that sort of works. The image sizes were a problem
 
 Future:
 analyze the problem before starting to code: what type of output do i need. how big is my data set
