@@ -65,9 +65,10 @@ Because adding more neurons or more epochs would be too computationally expensiv
 
 ![image](https://user-images.githubusercontent.com/67920563/88500796-b6140c80-cf97-11ea-9214-5db7c7fb9fbc.png)
 ![image](https://user-images.githubusercontent.com/67920563/88500819-c6c48280-cf97-11ea-90c3-29ea053391c8.png)
+
 Thus, this model was only increasing in error.
 
-The second model I ran on the 100:30 training and testing split and had promisng results. I used one convolutional layer of 64 neurons and changed the epochs to 3. Everything else stayed the same. 
+The second model I ran on the 100:30 training and testing split had promisng results. I used one convolutional layer of 64 neurons and changed the epochs to 3. Everything else stayed the same. 
 
 ![image](https://user-images.githubusercontent.com/67920563/88500941-02f7e300-cf98-11ea-90bb-6f12857e8fba.png)
 
