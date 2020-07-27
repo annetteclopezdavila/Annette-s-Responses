@@ -5,9 +5,9 @@ INSERT A COLLAGE OF PICTURES
 ## About the Data
 For this project, we were given 10,000 images of a neighborhood in Accra, the capital of Ghana, and its corresponding populations in order to train a Neural Network that could estimate population from satellite images. 
 Each image of the Korle Gonno neighborhood was equally sized and was of high resolution (~60 cm). 
-Looking at the corresponding population counts from September 2005, we see that the minimum population count is 0, the maximum is 119.7171, and the average is 55.3722. 
+Looking at the corresponding population counts from September 2005, we see that the minimum population count is 0, the maximum is 119.7171, and the average is 55.3722.
 
-INSERT BLUE HISTOGRAM
+![image](https://user-images.githubusercontent.com/67920563/88500505-e909d080-cf96-11ea-9096-74517665d2e0.png)
 
 Looking at the histogram, we see that almost 2,250 images have populations between 0 and 6.7, thus being the population range with the most pictures.
 The other images are evenly spread amongst each population range, with a notable exception in the 13.4 to 20.1 population range.
@@ -38,24 +38,28 @@ This loss function is used for binary multi-label classification. To this very h
 This was not a binary problem; that loss function is better off for the cats vs dogs problem or the horse vs human NN. What we *were* looking for in this problem, were floats. To top it all off,
 I still used the accuracy metric. Because I was getting a 0 in accuracy and losses of about 300, I decided that I needed to do some more research before blindly continuing.
 Below is my output for the 2nd model. As seen, I had terrible results.
-INSERT FIRST W STEP SIZE
+
+![image](https://user-images.githubusercontent.com/67920563/88500558-0343ae80-cf97-11ea-9b8e-be039e207e79.png)
 
 ## PHASE 3: Seeing the Light at Model 3
 After some internet searching, I found a table that cleared up what the floating names in my head meant (not that I didn't know; the concepts I learn in ML tend to get tangled in my head). Below is the beautiful chart I found (I lost the source unfortunately). 
 
-#INSERT CHART
-
+![image](https://user-images.githubusercontent.com/67920563/88500617-2bcba880-cf97-11ea-838c-a9d1c184794f.png)
 From the chart, I was able to deduce several things I needed to know: I needed to find a float point since I needed to predict a population, the problem was some type of regression, and my loss function needed to be MSE!
 Thus, I fixed my code and produced my best DNN model. Still using the 100:30 trianing/testing split, my first Sequential model had neuron layers of 128, 64, and 1. I changed my optimizer to RMSprop due to the fact that it can work a little better on bigger data sets. I changed my loss to mse, my metrics to 'mse', 'mae', and 'acc'. I ran 500 epochs and produced the following after an hour:
 
-#ADD 500 FINAL
+![image](https://user-images.githubusercontent.com/67920563/88500645-430a9600-cf97-11ea-8922-653fc5209263.png)
+![image](https://user-images.githubusercontent.com/67920563/88500667-57e72980-cf97-11ea-9c42-ce83f37832cf.png)
 
 From the tables, we see that the MSE began at ~680 and was reduced to ~556. Because the MSE, or Mean Squared Errors, and the losses should be as *low* as it can be, this meant that the model was still not optimal for this data. Because it was still decreasing, it seemed that perhaps the model was underfit. The validation were mostly in the thousands, the last being an MSE of 1398.6. Because the model was already at 500 epochs and was not reducing the losses quickly enough, a new model needed to be fit. As can be seen in the Mean Absolute Errors, the head of the data set shows a quick drop in the overal MAE in the first five epochs, but then continues to decrease at the same rate for the remainder of the epochs.
-#Head MAE insert
+
+![image](https://user-images.githubusercontent.com/67920563/88500694-6b929000-cf97-11ea-9ed3-6e92f8d74591.png)
 
 I decided to add one more Dense layer to the modell with 512 neurons. This took even longer, and only reduced the MSE to ~553. The MSE and MAE graphs for this last DNN are included below. 
-#MAe last 500
-#Last 500 MSE
+
+![image](https://user-images.githubusercontent.com/67920563/88500722-806f2380-cf97-11ea-9854-5da5cc60ca97.png)
+
+![image](https://user-images.githubusercontent.com/67920563/88500747-911f9980-cf97-11ea-800e-7f338af1a7a4.png)
 
 ## Phase 4: The Convolutional Networks
 Because adding more neurons or more epochs would be too computationally expensive, I decided to move on to a convolutional neural network. My first CNN had 2 convolutions and used pooling. I set the neurons to 128 and 64, and designed my next three Dense layers to have two layers of 64 units and one of 1 unit. My optimizers and loss functions remained the same, and my epochs were set to 5. My first CNN seemed overfit; the MSE began around 800 and dropped to 750, but then peaked in the thousands. Overall, it seemed like the MSE was on an upward trend. The MAE graph shows a similar peak to the MAE, but never dropped after the first epoch. 
