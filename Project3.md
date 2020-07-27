@@ -58,25 +58,31 @@ From the tables, we see that the MSE began at ~680 and was reduced to ~556. Beca
 I decided to add one more Dense layer to the modell with 512 neurons. This took even longer, and only reduced the MSE to ~553. The MSE and MAE graphs for this last DNN are included below. 
 
 ![image](https://user-images.githubusercontent.com/67920563/88500722-806f2380-cf97-11ea-9854-5da5cc60ca97.png)
-
 ![image](https://user-images.githubusercontent.com/67920563/88500747-911f9980-cf97-11ea-800e-7f338af1a7a4.png)
 
 ## Phase 4: The Convolutional Networks
 Because adding more neurons or more epochs would be too computationally expensive, I decided to move on to a convolutional neural network. My first CNN had 2 convolutions and used pooling. I set the neurons to 128 and 64, and designed my next three Dense layers to have two layers of 64 units and one of 1 unit. My optimizers and loss functions remained the same, and my epochs were set to 5. My first CNN seemed overfit; the MSE began around 800 and dropped to 750, but then peaked in the thousands. Overall, it seemed like the MSE was on an upward trend. The MAE graph shows a similar peak to the MAE, but never dropped after the first epoch. 
-#INSERT MAE CNN plot 1 and CNN 1 plot
 
+![image](https://user-images.githubusercontent.com/67920563/88500796-b6140c80-cf97-11ea-9214-5db7c7fb9fbc.png)
+![image](https://user-images.githubusercontent.com/67920563/88500819-c6c48280-cf97-11ea-90c3-29ea053391c8.png)
 Thus, this model was only increasing in error.
 
 The second model I ran on the 100:30 training and testing split and had promisng results. I used one convolutional layer of 64 neurons and changed the epochs to 3. Everything else stayed the same. 
-#insert Summary Final 3 epochs
+
+![image](https://user-images.githubusercontent.com/67920563/88500941-02f7e300-cf98-11ea-90bb-6f12857e8fba.png)
 My MSE was 362 while my MAE was about ~15.  
-#CNN Real 3
+
+![image](https://user-images.githubusercontent.com/67920563/88500979-1e62ee00-cf98-11ea-92a7-f938ecc2c1e9.png)
 This was the best MSE out of all the models, and thus I ran it several times to see if it was consistent. Below are my MSE and MAE graphs.
-#MSE CNN REAL
-#MAE REAL 3
+
+![image](https://user-images.githubusercontent.com/67920563/88501033-45b9bb00-cf98-11ea-853e-40dddb44aa9f.png)
+![image](https://user-images.githubusercontent.com/67920563/88501056-59652180-cf98-11ea-84d7-5a5f6aa61f38.png)
+
 My validation loss was 73 and the MAE was 8.52. Thus, the validation results were not all that different than the previous models.
+
+![image](https://user-images.githubusercontent.com/67920563/88501009-30dd2780-cf98-11ea-8c55-12978b441444.png)
 
 ## Conclusion
 Because the CNN was my best model, I decided to run a training: test split of 1000:40. This produced an MSE of ~50. In my excitement, I closed out on the browser, and lost all my graphs and data before I saved it. I am currently running it again but am not sure if it will be ready before midnight due to the fact that it continues to crash. It could have been a soletary case, considering none of my previous models with smaller data sets were close to such a small MSE.
-I decided to then try running a model with a 3000:30 split. Although my model would run through the majority of my training data, the session would crash due to a RAM error. Thus, I was only able to run it on 1040 images total. Overall, I do not feel like I did a very good job with minimizing the losses. Perhaps this was due to the fact that for the majority of the project, I was still figuring out how to write a better DNN. For the future, I plan to analyze the problem *before* starting to code. Although I expected my first model to immediately show me what I would need to fix, it would have saved many hours to figure out the type of problem, what type of output I needed, how big my data set was and which models worked best with those sizes, and troubleshoot future problems I could have. Had I initially thought that out, I would have avoided my many steps of catastrophe, and also worked on better solutions rather than just producing a model that sort of works. The image sizes were a problem. A little bit of preprocessing would have helped with that. Another thing I didn't even notice until I went to make a collage out of the pictures was that they were not cut to just the image. They had a white boarder that could have been discarded. Another thing I noticed when I went to make the collage is that perhaps I should have randomly chose the images, as they are all in order by particular area. Thus, I could have trained the model with a completely rural set and expected it to work in a more urban area. The images needed to be more randomized if I wasn't using the entire data set. Lastly, due to the way I imported my pictures, I am not sure that the labels truly matched. When I was looking through the data sets on google drive, they were all mixed up. In the file they were in order, but when I printed them they were not. I only just realized that error, so that may have been a big part as to why my numbers were so high. Oh well. At least I learned how to use a loss function.
+I decided to then try running a model with a 3000:30 split. Although my model would run through the majority of my training data, the session would crash due to a RAM error. Thus, I was only able to run it on 1040 images total. Overall, I do not feel like I did a very good job with minimizing the losses. Perhaps this was due to the fact that for the majority of the project, I was still figuring out how to write a better DNN. For the future, I plan to analyze the problem *before* starting to code. Although I expected my first model to immediately show me what I would need to fix, it would have saved many hours to figure out the type of problem, what type of output I needed, how big my data set was and which models worked best with those sizes, and troubleshoot future problems I could have. Had I initially thought that out, I would have avoided my many steps of catastrophe, and also worked on better solutions rather than just producing a model that sort of works. The image sizes were a problem. A little bit of preprocessing would have helped with that. Another thing I didn't even notice until I went to make a collage out of the pictures was that they were not cut to just the image. They had a white boarder that could have been discarded. Another thing I noticed when I went to make the collage is that perhaps I should have randomly chose the images, as they are all in order by particular area. Thus, I could have trained the model with a completely rural set and expected it to work in a more urban area. The images needed to be more randomized if I wasn't using the entire data set. Thirdly, I didn't change my activation functions in the model. I'm not sure if it would have affected it, but I didn't take it into consideration in the chaos. Lastly, due to the way I imported my pictures, I am not sure that the labels truly matched. When I was looking through the data sets on google drive, they were all mixed up. In the file they were in order, but when I printed them they were not. I only just realized that error, so that may have been a big part as to why my numbers were so high. Oh well. At least I won't be forgetting how to choose a loss function now.
 
