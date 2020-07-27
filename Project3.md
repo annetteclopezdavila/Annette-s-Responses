@@ -46,7 +46,22 @@ After some internet searching, I found a table that cleared up what the floating
 #INSERT CHART
 
 From the chart, I was able to deduce several things I needed to know: I needed to find a float point since I needed to predict a population, the problem was some type of regression, and my loss function needed to be MSE!
-Thus, I fixed my code and produced my best DNN model
+Thus, I fixed my code and produced my best DNN model. Still using the 100:30 trianing/testing split, my first Sequential model had neuron layers of 128, 64, and 1. I changed my optimizer to RMSprop due to the fact that it can work a little better on bigger data sets. I changed my loss to mse, my metrics to 'mse', 'mae', and 'acc'. I ran 500 epochs and produced the following after an hour:
+
+#ADD 500 FINAL
+
+From the tables, we see that the MSE began at ~680 and was reduced to ~556. Because the MSE, or Mean Squared Errors, and the losses should be as *low* as it can be, this meant that the model was still not optimal for this data. Because it was still decreasing, it seemed that perhaps the model was underfit. The validation were mostly in the thousands, the last being an MSE of 1398.6. Because the model was already at 500 epochs and was not reducing the losses quickly enough, a new model needed to be fit. As can be seen in the Mean Absolute Errors, the head of the data set shows a quick drop in the overal MAE in the first five epochs, but then continues to decrease at the same rate for the remainder of the epochs.
+#Head MAE insert
+
+I decided to add one more Dense layer to the modell with 512 neurons. This took even longer, and only reduced the MSE to ~553. The MSE and MAE graphs for this last DNN are included below. 
+#MAe last 500
+#Last 500 MSE
+
+## Phase 4: The Convolutional Networks
+Because adding more neurons or more epochs would be too computationally expensive, I decided to move on to a convolutional neural network. My first CNN had 2 convolutions and used pooling. I set the neurons to 128 and 64, and designed my next three Dense layers to have two layers of 64 units and one of 1 unit. My optimizers and loss functions remained the same, and my epochs were set to 5. My first CNN seemed overfit; the MSE began around 800 and dropped to 750, but then peaked in the thousands. Overall, it seemed like the MSE was on an upward trend. The MAE graph shows a similar peak to the MAE, but never dropped after the first epoch. 
+#INSERT MAE CNN plot 1 and CNN 1 plot
+
+Thus, this model was only increasing in error.
 
 
 
