@@ -70,9 +70,11 @@ Thus, this model was only increasing in error.
 The second model I ran on the 100:30 training and testing split and had promisng results. I used one convolutional layer of 64 neurons and changed the epochs to 3. Everything else stayed the same. 
 
 ![image](https://user-images.githubusercontent.com/67920563/88500941-02f7e300-cf98-11ea-90bb-6f12857e8fba.png)
+
 My MSE was 362 while my MAE was about ~15.  
 
 ![image](https://user-images.githubusercontent.com/67920563/88500979-1e62ee00-cf98-11ea-92a7-f938ecc2c1e9.png)
+
 This was the best MSE out of all the models, and thus I ran it several times to see if it was consistent. Below are my MSE and MAE graphs.
 
 ![image](https://user-images.githubusercontent.com/67920563/88501033-45b9bb00-cf98-11ea-853e-40dddb44aa9f.png)
