@@ -12,8 +12,9 @@
 6. [Response 6: July 20th, 2020](July20.md)
 7. [Response 7: July 21th, 2020](July21.md)
 8. [Response 8: July 22th, 2020](July22.md)
-9. [Response 9: July 28th, 2020](July-28.md)
-10. [Response 10: July 29th, 2020](July-29.md)
+9. [Response 9: July 27th, 2020](July-27.md)
+10. [Response 10: July 28th, 2020](July-28.md)
+11. [Response 11: July 29th, 2020](July-29.md)
 
 ## Project Index
 1. [Project 1: July 12, 2020](Project1.md)
