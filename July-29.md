@@ -25,9 +25,11 @@ from Spanish to English.  How did your translations turn out?
 to "Did he/she have to go to the doctor or hospital?"
 
 Sentence 2 was the only sentence translated correctly:
+
 ![image](https://user-images.githubusercontent.com/67920563/89103617-0ef10400-d3e1-11ea-994c-cf05f4fbe754.png)
 
 Sentence 3 was supposed to be translated from:
+
 ![image](https://user-images.githubusercontent.com/67920563/89103619-12848b00-d3e1-11ea-9a7e-8aebc84e5749.png)
 
 to "To whom do I leave $20 dollars for?"
