@@ -9,11 +9,13 @@
 ### Image 2:
 - Actual: 0
 - Predicted: ~0
+
 ![image](https://user-images.githubusercontent.com/67920563/89104271-1070fb00-d3e6-11ea-9967-7cd1f2a9479f.png)
 
 ### Image 3: 
 - Actual: ~23
 - Predicted: ~14
+
 ![image](https://user-images.githubusercontent.com/67920563/89104278-1ebf1700-d3e6-11ea-9269-0d30019a50f2.png)
 
 
