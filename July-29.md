@@ -19,5 +19,15 @@ model to predict whether the titles are interpreted as sarcastic or not.  Analyz
 ## Neural machine translation with attention
 3. **Question 3:** Use the translate() command at the end of the exercise to translate three sentences 
 from Spanish to English.  How did your translations turn out? 
+- With the example phrases on the tensorflow exercises, the model was able to translate the sentences quite well. However, when I added my own sentences (which were a little more advanced than the ones in the exercise), the model was only able to accurately translate the easiest of the three. The other sentences were not even close to the English translation. For example, sentence 1 was supposed to be translated from:
+![image](https://user-images.githubusercontent.com/67920563/89103614-07c9f600-d3e1-11ea-9ed2-bde5cddab376.png)
 
- 
+to "Did he/she have to go to the doctor or hospital?"
+
+Sentence 2 was the only sentence translated correctly:
+![image](https://user-images.githubusercontent.com/67920563/89103617-0ef10400-d3e1-11ea-994c-cf05f4fbe754.png)
+
+Sentence 3 was supposed to be translated from:
+![image](https://user-images.githubusercontent.com/67920563/89103619-12848b00-d3e1-11ea-9a7e-8aebc84e5749.png)
+
+to "To whom do I leave $20 dollars for?"
