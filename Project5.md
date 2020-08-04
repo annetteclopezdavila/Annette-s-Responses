@@ -20,5 +20,5 @@ I could make a supervised learning model with regression; rather than stating, "
 in for explanation of the known correlation.  
 Reinforcement learning wouldn't really fit the question here; perhaps it could be used to test medication or treatment options for migraines.
 Unsupervised Learning using dimensional reduction may be the optimal model type for this project; since I have possible biomarkers of anxiety and migraines, I can answer the question: 
-"Which biomarkers tend to occur together?"
+"Which biomarkers tend to occur together?". This algorithm would simplify the many possibilites of biomarkers out there for a human analyst. 
 
