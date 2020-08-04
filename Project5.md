@@ -22,3 +22,13 @@ Reinforcement learning wouldn't really fit the question here; perhaps it could b
 Unsupervised Learning using dimensional reduction may be the optimal model type for this project; since I have possible biomarkers of anxiety and migraines, I can answer the question: 
 "Which biomarkers tend to occur together?". This algorithm would simplify the many possibilites of biomarkers out there for a human analyst. 
 
+## **August 4, 2019** Describing the Data
+- Features:
+- Target: 
+- Type of Data: Continuous and Nominal Data
+- Data Summary:
+
+- pairplot
+- correlation matrix/heatmap
+-PCA w standard scaling
+- clustering with AHC/ dbscan/ kmeans
