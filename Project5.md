@@ -28,6 +28,8 @@ Unsupervised Learning using dimensional reduction may be the optimal model type 
 - Type of Data: Continuous and Nominal Data
 - Data Summary:
 
+
+## Architecture
 - pairplot
 - correlation matrix/heatmap
 -PCA w standard scaling
