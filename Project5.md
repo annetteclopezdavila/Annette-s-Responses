@@ -2,9 +2,11 @@
 
 ## Abstract
 
+![image](https://user-images.githubusercontent.com/67920563/89736518-f5326b00-da37-11ea-971c-9f70b87a4b18.png)
+
 Have you ever been to a doctor and not known how to describe what your feeling? Poor communication between patients and their doctors is one of the leading causes of misdiagnoses, and even death! Because of the lack of known tests, disorders such as migraines and anxiety can only be diagnosed by the patient’s description of symptoms. Thus, it is important to find biomarkers, or measurable indicators of a biological process, for these disorders. Migraines are reoccurring headaches that may cause nausea, vision loss, sensitivity to light, mood changes, and auras; they affect 12% of the world’s population. 50% of Migraine patients are diagnosed with an anxiety disorder. Thus, by examining whether these two disorders share possible biomarkers, we can learn more about the nature of this correlation, as well as how different or similar these two disorders. I applied methods of PCA, Hierarchical clustering, Binomial Regression, and Gradient Boosted Trees to attempt to distinguish each disorder based on possible biomarkers. 
 
-## **August 3, 2019** Finding a Problem Statement and Central Question
+##  Finding a Problem Statement and Central Question
 It is essential to word your question correctly in order to determine the architecture of your model. With all the research I had done and a general problem statement, 
 I had many ideas as to what my project could turn out to be. Thus, I found a condensed explanation of types of questions that machine learning can answer.
 Machine Learning Algorithms can be split into three families: Supervised Learning, Unsupervised Learning, and Reinforcement Learning.
