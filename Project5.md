@@ -1,9 +1,6 @@
-# Project 5: Exploration of migraine pathologies with DNNs
-
-## Abstract
-
 ![image](https://user-images.githubusercontent.com/67920563/89736518-f5326b00-da37-11ea-971c-9f70b87a4b18.png)
 
+## Abstract
 Have you ever been to a doctor and not known how to describe what your feeling? Poor communication between patients and their doctors is one of the leading causes of misdiagnoses, and even death! Because of the lack of known tests, disorders such as migraines and anxiety can only be diagnosed by the patient’s description of symptoms. Thus, it is important to find biomarkers, or measurable indicators of a biological process, for these disorders. Migraines are reoccurring headaches that may cause nausea, vision loss, sensitivity to light, mood changes, and auras; they affect 12% of the world’s population. 50% of Migraine patients are diagnosed with an anxiety disorder. Thus, by examining whether these two disorders share possible biomarkers, we can learn more about the nature of this correlation, as well as how different or similar these two disorders. I applied methods of PCA, Hierarchical clustering, Binomial Regression, and Gradient Boosted Trees to attempt to distinguish each disorder based on possible biomarkers. 
 
 ##  Finding a Problem Statement and Central Question
